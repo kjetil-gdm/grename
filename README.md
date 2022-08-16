@@ -4,14 +4,21 @@ grename is used to rename files to a new name+index/sequence.\
 \
 Useful if you have a bunch of files ordered correctly, but not named in a sequence, for instance with dates, like "file20220101", "file20220102", et.c.\
 \
-Usage:\
+# Usage
 grename [-test] [searchpattern] [newname] [string indexformat] [int startindex]\
+\
 grename [searchpattern] -> TEST searchpattern only: outputs list of this searchpattern in the order grename will process it.\
+\
 grename -test : insert ' -test ' anywhere in argument list to do a dry run, showing each file and potential new name without actually renaming\
+\
 [newname] : e.g newname?.png (- ? will be replaced with sequence)\
-e.g: grename *.png newname?.png 000 1 -> rename all files found by *.png (ordered alphabetically) to 'newname001.png, 002, etc\\
-e.g: grename *.jpg new?file.jpg 000 1 -> rename all files found by *.png (ordered alphabetically) to 'newname001, 002, etc\
-e.g: grename *.jpg new?.jpeg -> rename *.jpg to new?.jpeg using default format ('0') and default startindex (1)\
+\
+# Examples
+grename *.png newname?.png 000 1 -> rename all files found by *.png (ordered alphabetically) to 'newname001.png, 002, etc\
+\
+grename *.jpg new?file.jpg 000 1 -> rename all files found by *.png (ordered alphabetically) to 'newname001, 002, etc\
+\
+grename *.jpg new?.jpeg -> rename *.jpg to new?.jpeg using default format ('0') and default startindex (1)\
 \
 --\
 Download release, put grename.exe in e.g c:\grename\
