@@ -2,7 +2,8 @@
 C# windows Console App (.NET 4.6.1)\
 grename is used to rename files to a new name+index/sequence.\
 \
-Useful if you have a bunch of files ordered correctly, but not named in a sequence, for instance with dates, like "file20220101", "file20220102", et.c.\
+Useful if you need to rename many files and add numbered index.\
+You may have a bunch of files ordered correctly, but not named in a sequence, for instance with dates, like "file20220101", "file20220102", et.c.\
 
 # Usage
 grename [-test] [searchpattern] [newname] [string indexformat] [int startindex]\
