@@ -1,6 +1,5 @@
 # grename
 C# windows Console App (.NET 4.6.1)\
-grename by Kjetil Larsen.\
 grename is used to rename files to a new name+index/sequence.\
 \
 Useful if you have a bunch of files ordered correctly, but not named in a sequence, for instance with dates, like "file20220101", "file20220102", et.c.\
@@ -22,3 +21,4 @@ Uses Directoy.GetFiles() to retrieve list of files, which does not guarantee whi
 Use grename *.something to check which order your files are returned in.\
 You're welcome to fork the repo and add LINQ style OrderBy() on the list, if you have specific needs, such as getting the files in order of date or some property.\
 See https://stackoverflow.com/questions/4765789/getting-files-by-creation-date-in-net\
+--\
