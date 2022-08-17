@@ -17,9 +17,9 @@ grename -test : insert ' -test ' anywhere in argument list to do a dry run, show
 # Examples
 grename *.png newname?.png 000 1 -> rename all files found by *.png (ordered alphabetically) to 'newname001.png, 002, etc\
 \
-grename *.jpg new?file.jpg 000 1 -> rename all files found by *.png (ordered alphabetically) to 'newname001, 002, etc\
+grename *.jpg new?file.jpg 00 1 -> rename all files found by *.jpg (ordered alphabetically) to 'new01file.jpg, new02file.jpg, etc\
 \
-grename *.jpg new?.jpeg -> rename *.jpg to new?.jpeg using default format ('0') and default startindex (1)\
+grename *.jpg new?.jpeg -> rename *.jpg to new?.jpeg using default format ('0') and default startindex (1), renames to new0.jpeg, new1.jpeg, et.c   \
 
 # Install
 Download release, put grename.exe in e.g c:\grename\
