@@ -85,10 +85,13 @@ namespace grename
             Console.WriteLine("grename [searchpattern] -> TEST searchpattern only: outputs list of this searchpattern in the order grename will process it.");
             Console.WriteLine("grename -test : insert ' -test ' anywhere in argument list to do a dry run, showing each file and potential new name without actually renaming");
             Console.WriteLine("[newname] : e.g newname?.png (- ? will be replaced with sequence)");
-             
-            Console.WriteLine("e.g: grename *.png newname?.png 000 1 -> rename all files found by *.png (ordered alphabetically) to 'newname001.png, 002, etc");
-            Console.WriteLine("e.g: grename *.jpg new?file.jpg 000 1 -> rename all files found by *.png (ordered alphabetically) to 'newname001, 002, etc");
-            Console.WriteLine("e.g: grename *.jpg new?.jpeg -> rename *.jpg to new?.jpeg using default format ('0') and default startindex (1)");
+            Console.WriteLine("");
+            Console.WriteLine("Examples:");
+            Console.WriteLine("grename *.png -> outputs list of files found with searchpattern, in the order grename will process them");
+            Console.WriteLine("grename *.png newname?.png 000 1 -> rename all files found by *.png (ordered alphabetically) to 'newname001.png, 002, etc");
+            Console.WriteLine("grename -test *.png newname?.png 000 1 -> list all files found and new name it will get when you run without -test param.");
+            Console.WriteLine("grename *.jpg new?file.jpg 00 1 -> rename all files found by *.jpg (ordered alphabetically) to 'new01file.jpg, new02file.jpg, etc");
+            Console.WriteLine("grename *.jpg new?.jpeg -> rename *.jpg to new?.jpeg using default format ('0') and default startindex (1)");
 
         }
         public static void testpattern(string search)
