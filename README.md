@@ -20,6 +20,8 @@ grename *.png newname?.png 000 1 -> rename all files found by *.png (ordered alp
 grename *.jpg new?file.jpg 00 1 -> rename all files found by *.jpg (ordered alphabetically) to 'new01file.jpg, new02file.jpg, etc\
 \
 grename *.jpg new?.jpeg -> rename *.jpg to new?.jpeg using default format ('0') and default startindex (1), renames to new0.jpeg, new1.jpeg, et.c   \
+\
+grename -test *.png newname?.png 000 1 -> list all files found and new name it will get when you run without -test param.\
 
 # Install
 Download release, put grename.exe in e.g c:\grename\
